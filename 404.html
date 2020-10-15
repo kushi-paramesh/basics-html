@@ -3,7 +3,7 @@
 <title>404 Not Found</title>
 <body onload="document.body.className = 'failed'">
 <script>document.body.className = 'loading'</script>
-<div class="loading">;
+<div class="loading">
  <p>Loading...</p>
 </div>
 <div class="failed">
@@ -17,3 +17,36 @@
  If you found a broken link from another site pointing to the WHATWG site,
  please let that site know of the problem instead. Thanks!</p>
 </div>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("I am an alert box!");
+}
+</script>
+
+<script>
+		 var userPreference;
+
+		if (confirm("Do you want to save changes?") == true) {
+			userPreference = "Data saved successfully!";
+		} else {
+			userPreference = "Save Canceled!";
+		}
+
+		document.getElementById("msg").innerHTML = userPreference; 
+
+    </script>
+
+<h1>Demo: prompt()</h1>
+	<p id="msg"></p>
+	
+	<script>
+		var tenure = prompt("Please enter preferred tenure in years", "15");
+    
+		document.getElementById("msg").innerHTML = "You have entered " + tenure + " years";
+    </script>
+
+ 
